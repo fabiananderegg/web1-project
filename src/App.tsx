@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
+import { Header } from './Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header" >
-        <div className="Header-text">
-          Todo App
-        </div>
-      </header>
+      <Header/>
       <div className="App-body">
           <div className="Task-input">
             <div className="Task-input-text">
