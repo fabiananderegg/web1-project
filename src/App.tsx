@@ -1,17 +1,27 @@
-import React from 'react';
+import { ChangeEvent, useState } from 'react'
 import './App.css';
 import { Header } from './Header';
+
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <div className="App-body">
+        
+        const TextInput = () => { 
+          const [text, setText] = useState('')
+
+          const updateText = (event: ChangeEvent<HTMLInputElement>) => {
+            setText(event.target.value)
+          }     
+          
+          return <input onChange={updateText} value={text} />
+        }
+
           <div className="Task-input">
             <div className="Task-input-text">
-              <input className="Inp-input-text" type="text">
-
-              </input>
+              <input className="input" type="text" onChange={updateText} value={text} />
               <button className="Btn-confirm-input">
                 Hinzufügen
               </button>
