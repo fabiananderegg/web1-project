@@ -3,39 +3,7 @@
   flex-direction: column;
   justify-content: center;
 
-
   text-align: center;
-  
-}
-
-.App-header {
-  background-color: #2b7a78;
-  color: #def2f1;
-
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  
-  justify-content: left;
-  align-items: center;
-  align-content: flex-start;
-}
-
-.Header-text {
-  font-size: 25px;
-  margin-left: 25px;
-}
-
-.App-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: column;
-  align-items: center;
-
-  background-color: #def2f1;
-  color: #2b7a78;
-
-  min-height: 100vh;
 }
 
 .Task-input{
@@ -52,17 +20,9 @@
   justify-content: center;
 }
 
-.Btn-confirm-input {
-  border: none;
-  background-color: #5bbcb7;
-  color: #def2f1;
-}
 
-.Inp-input-text {
-  border-color: #3aafa9;
-  border-radius: none;
-  border-width: 2px;
-}
+
+
 
 .Task-input-filter{
 

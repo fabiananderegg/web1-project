@@ -1,0 +1,11 @@
+.Square-button {
+    border: none;
+    background-color: #5bbcb7;
+    color: #def2f1;
+}
+
+.Square-button:hover {
+    border: none;
+    background-color: #2b7a78;
+    color: #def2f1;
+}
