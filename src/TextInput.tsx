@@ -7,7 +7,10 @@ interface Props {
 }
 
 export const TextInput = (props: Props) => (
+	
+	
 	<input
+		defaultValue="*Hallo"
 		type="text"
 		className="Text-input"
 		onChange={props.onChange}

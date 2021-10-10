@@ -1,37 +1,27 @@
-import React, { ChangeEvent, useState } from 'react';
+//import React, { ChangeEvent, useState } from 'react';
 import './App.css';
 import {AppBar} from './AppBar'
 import {AppBody} from './AppBody'
+import {TaskInput} from './TaskInput'
 import {SquareButton} from './SquareButton'
-import {TextInput} from './TextInput'
+//import {TextInput} from './TextInput'
+//import {CbText} from './CheckBoxWithText'
 
 function App() {
-  const [inputText, setInputText] = useState("Neue Aufgabe hinzufügen...")
-
-  const updateTextInput = (event: ChangeEvent<HTMLInputElement>) => {
-		setInputText(event.target.value)
-	}
 
   return (
     <div className="App">
       <AppBar> Todo App </AppBar>
       <AppBody>
-        <div className="Task-input">
-          <div className="Task-input-text">
-            <TextInput onChange={updateTextInput} value={inputText} ></TextInput>
-            <SquareButton> Hinzufügen </SquareButton>
-          </div>
-          <div className="Task-input-filter">
-            <input className="Cb-filter-tasks" type="checkbox"/>
-            <div> Alle anzeigen</div>
-          </div>
-        </div>
+        <TaskInput></TaskInput>
         <div className="Task-list">
           <div className="firstTask">
             <input className="Cb-first-task" type="checkbox"/>
-            <button className="Btn-first-task-one"> </button>
-            <div>Input text</div>
-            <button> Löschen </button>
+            <button className="Btn-first-task-one"> 
+              <span role="img">{'\u1f5f2'}</span>
+            </button>
+            <div> Input text </div>
+            <SquareButton> Löschen </SquareButton>
           </div>
         </div>
       </AppBody>

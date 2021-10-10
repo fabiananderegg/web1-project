@@ -1,0 +1,13 @@
+.Task-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.Task-input-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

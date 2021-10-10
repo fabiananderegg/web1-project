@@ -6,32 +6,13 @@
   text-align: center;
 }
 
-.Task-input{
-  display: flex;
-  flex-direction: column;
-  justify-content: column;
-  align-items: flex-start;
-  padding: 30px;
-}
-
-.Task-input-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 
 
 
 
-.Task-input-filter{
 
-  align-self: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-content: flex-start;
-}
+
 
 .firstTask {
   display: flex;
@@ -44,5 +25,4 @@
   border: none;
   background-color: #5bbcb7;
   color: #def2f1;
-  mask-image: \1F5F2;
 }
