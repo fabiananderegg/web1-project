@@ -5,24 +5,3 @@
 
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-.firstTask {
-  display: flex;
-  justify-content: center;
-  min-width: 80%;
-  justify-content: space-around;
-}
-
-.Btn-first-task-one {
-  border: none;
-  background-color: #5bbcb7;
-  color: #def2f1;
-}
