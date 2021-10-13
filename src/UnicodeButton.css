@@ -4,6 +4,12 @@
     color:  #5bbcb7;
 }
 
+.uButtonSelected {
+    border: none;
+    background-color: #def2f1;
+    color:  #2b7a78;
+}
+
 .uButton:hover {
     color:  #2b7a78;
 }

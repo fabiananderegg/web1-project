@@ -1,8 +1,9 @@
 import './TextInput.css'
-import {ChangeEvent} from 'react'
+import {ChangeEvent, FocusEvent} from 'react'
 
 interface Props {
 	onChange: (event: ChangeEvent<HTMLInputElement>) => void
+	onFocus: (event: FocusEvent<HTMLInputElement>) => void
 	value: string
 }
 
@@ -14,6 +15,7 @@ export const TextInput = (props: Props) => (
 		type="text"
 		className="Text-input"
 		onChange={props.onChange}
+		onFocus={props.onFocus}
 		value={props.value}
 	/>
 )
